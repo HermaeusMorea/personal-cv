@@ -13,6 +13,8 @@ type ProjectDetailContentProps = {
   project: Project;
 };
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 function isLinkedOutcomeBullet(
   bullet: ProjectOutcomeBullet,
 ): bullet is Extract<ProjectOutcomeBullet, { href: string }> {
@@ -96,7 +98,7 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
                   {project.media.map((item) => (
                     <figure key={item.src} className="overflow-hidden rounded-md border border-white/10 bg-white/[0.03]">
                       <Image
-                        src={item.src}
+                        src={`${basePath}${item.src}`}
                         alt={resolveLocalizedText(item.alt, language)}
                         width={item.width}
                         height={item.height}
