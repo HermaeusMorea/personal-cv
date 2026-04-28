@@ -1,16 +1,13 @@
-# AI Agent Portfolio
+# Personal CV
 
-A static personal portfolio MVP for AI, agent, and software engineering roles. It uses Next.js App Router, TypeScript, Tailwind CSS, Motion, React Three Fiber, Drei, and lucide-react.
+A personal CV and project portfolio site.
 
-## Install
+Built with Next.js, TypeScript, Tailwind CSS, Motion, React Three Fiber, and GitHub Pages.
+
+## Local Development
 
 ```bash
 npm install
-```
-
-## Run Locally
-
-```bash
 npm run dev
 ```
 
@@ -20,52 +17,21 @@ Open `http://localhost:3000`.
 
 ```bash
 npm run build
+npm run start
 ```
 
-## Deploy To Vercel
+## Deployment
 
-1. Push this repository to GitHub.
-2. Import the repository in Vercel.
-3. Keep the default Next.js settings.
-4. Deploy.
+This site deploys to GitHub Pages through GitHub Actions on every push to `master`.
 
-## Add Projects
+Published site:
 
-Project data lives in `lib/data/projects.ts`.
-
-The current data source is intentionally empty:
-
-```ts
-export const projects: Project[] = [];
+```text
+https://hermaeusmorea.github.io/personal-cv/
 ```
 
-Add entries using the `Project` type from `lib/types/project.ts`:
+## Content
 
-```ts
-export const projects = [
-  {
-    title: "Project title",
-    slug: "project-slug",
-    description: "Short case study summary.",
-    tags: ["Next.js", "AI", "TypeScript"],
-    status: "in-progress",
-    links: [{ label: "Demo", href: "https://example.com" }],
-    highlights: ["Important result or technical decision."],
-  },
-] satisfies Project[];
-```
-
-The home page and `/projects` page both read from this file. When the array is empty, the UI shows an empty state.
-
-## Update Skills
-
-Skill data lives in `lib/data/skills.ts`. Edit this file to adjust the skill cards shown on the home page.
-
-## Future Portfolio Agent
-
-This repo reserves these paths for a future AI portfolio agent:
-
-- `components/agent`
-- `lib/agent`
-
-A future implementation can add a UI entry point under `components/agent` and keep agent routing, tool definitions, retrieval, or profile/project context helpers in `lib/agent`. The current MVP does not call any AI APIs and is safe to deploy as a static portfolio shell.
+- Project data: `lib/data/projects.ts`
+- Homepage copy: `lib/i18n/content.ts`
+- Project images: `public/projects/`
