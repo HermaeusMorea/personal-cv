@@ -12,6 +12,7 @@ import { localizedSkills, siteContent } from "@/lib/i18n/content";
 export function HomeContent() {
   const { language, t } = useLanguage();
   const skills = localizedSkills[language];
+  const featuredProjects = projects.filter((project) => project.featured !== false);
 
   return (
     <main>
@@ -30,7 +31,7 @@ export function HomeContent() {
           </Link>
         }
       >
-        <ProjectGrid projects={projects} compact />
+        <ProjectGrid projects={featuredProjects} compact />
       </Section>
 
       <Section

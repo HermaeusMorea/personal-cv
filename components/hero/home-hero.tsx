@@ -26,20 +26,11 @@ export function HomeHero() {
           >
             {t(siteContent.hero.eyebrow)}
           </motion.div>
-          <motion.p
-            initial={{ opacity: 0, y: 22 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.08, ease: "easeOut" }}
-            className="text-balance max-w-3xl text-2xl font-medium leading-10 text-white sm:text-3xl sm:leading-[1.45]"
-          >
-            {t(siteContent.hero.description)}
-          </motion.p>
-
           <motion.div
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.16, ease: "easeOut" }}
-            className="mt-8 flex flex-wrap gap-3"
+            transition={{ duration: 0.7, delay: 0.08, ease: "easeOut" }}
+            className="flex flex-wrap gap-3"
           >
             {heroLinks.map((item, index) => {
               const Icon = item.icon;

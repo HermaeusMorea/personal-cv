@@ -68,4 +68,4 @@ This repo reserves these paths for a future AI portfolio agent:
 - `components/agent`
 - `lib/agent`
 
-A future implementation can add a UI entry point under `components/agent` and keep agent routing, tool definitions, retrieval, or resume/project context helpers in `lib/agent`. The current MVP does not call any AI APIs and is safe to deploy as a static portfolio shell.
+A future implementation can add a UI entry point under `components/agent` and keep agent routing, tool definitions, retrieval, or profile/project context helpers in `lib/agent`. The current MVP does not call any AI APIs and is safe to deploy as a static portfolio shell.

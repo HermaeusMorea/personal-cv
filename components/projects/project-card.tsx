@@ -12,29 +12,6 @@ type ProjectCardProps = {
   project: Project;
 };
 
-const statusLabels = {
-  concept: {
-    en: "Concept",
-    zh: "概念",
-  },
-  prototype: {
-    en: "Prototype",
-    zh: "原型",
-  },
-  "in-progress": {
-    en: "In progress",
-    zh: "进行中",
-  },
-  shipped: {
-    en: "Shipped",
-    zh: "已发布",
-  },
-  archived: {
-    en: "Archived",
-    zh: "已归档",
-  },
-} as const;
-
 export function ProjectCard({ project }: ProjectCardProps) {
   const { language, t } = useLanguage();
   const title = resolveLocalizedText(project.title, language);
@@ -52,10 +29,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       >
         <div className="flex items-start justify-between gap-4">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-200">
-              {statusLabels[project.status][language]}
-            </p>
-            <h3 className="mt-3 text-xl font-semibold text-white">{title}</h3>
+            <h3 className="text-xl font-semibold text-white">{title}</h3>
           </div>
           <ArrowUpRight className="h-5 w-5 text-slate-500 transition group-hover:text-sky-200" />
         </div>

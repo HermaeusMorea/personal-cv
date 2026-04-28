@@ -13,29 +13,6 @@ type ProjectDetailContentProps = {
   project: Project;
 };
 
-const statusLabels = {
-  concept: {
-    en: "Concept",
-    zh: "概念",
-  },
-  prototype: {
-    en: "Prototype",
-    zh: "原型",
-  },
-  "in-progress": {
-    en: "In progress",
-    zh: "进行中",
-  },
-  shipped: {
-    en: "Shipped",
-    zh: "已发布",
-  },
-  archived: {
-    en: "Archived",
-    zh: "已归档",
-  },
-} as const;
-
 function isLinkedOutcomeBullet(
   bullet: ProjectOutcomeBullet,
 ): bullet is Extract<ProjectOutcomeBullet, { href: string }> {
@@ -50,7 +27,6 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
   return (
     <main className="pt-24">
       <Section
-        eyebrow={statusLabels[project.status][language]}
         title={title}
         description={description}
         action={

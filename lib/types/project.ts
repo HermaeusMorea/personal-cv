@@ -56,6 +56,7 @@ export type Project = {
   description: LocalizedText;
   tags: string[];
   status: ProjectStatus;
+  featured?: boolean;
   links: ProjectLink[];
   highlights: ProjectHighlight[];
   sections?: ProjectSection[];

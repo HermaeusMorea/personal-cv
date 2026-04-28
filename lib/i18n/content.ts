@@ -45,10 +45,6 @@ export const siteContent = {
       en: "AI / Agent / Software Engineering",
       zh: "AI / 智能体 / 软件工程",
     },
-    description: {
-      en: "A focused portfolio showing practical engineering work across LLM tooling, product prototypes, front-end interfaces, and deployable systems.",
-      zh: "一个面向求职的作品集，展示我在 LLM 工具、产品原型、前端体验和可部署系统上的工程能力。",
-    },
     links: {
       github: { en: "GitHub", zh: "GitHub" },
       contact: { en: "Contact", zh: "联系我" },
@@ -106,72 +102,72 @@ export const siteContent = {
 export const localizedSkills: Record<Language, Skill[]> = {
   en: [
     {
-      title: "Agentic Product Prototyping",
-      category: "AI",
-      description:
-        "Planning workflow shape, tool boundaries, evaluation checkpoints, and user-facing interaction patterns.",
-    },
-    {
-      title: "Full-Stack Web Foundations",
-      category: "Software",
-      description:
-        "Building typed Next.js applications with clean UI structure, deployable routes, and maintainable data modules.",
-    },
-    {
-      title: "Interface Craft",
-      category: "Frontend",
-      description:
-        "Designing responsive, polished, dark-mode interfaces with motion, glass surfaces, and clear interaction states.",
-    },
-    {
-      title: "Systems Thinking",
+      title: "System Decomposition",
       category: "Architecture",
       description:
-        "Breaking ambiguous ideas into small, testable pieces that can evolve into robust product infrastructure.",
+        "Breaking open-ended product ideas into clear layers, ownership boundaries, and testable execution paths.",
     },
     {
-      title: "Developer Tooling",
+      title: "Structured AI Output",
+      category: "AI",
+      description:
+        "Turning model responses into constrained, validated artifacts that downstream software can consume safely.",
+    },
+    {
+      title: "Runtime Boundary Design",
+      category: "Systems",
+      description:
+        "Keeping unpredictable generation outside critical runtime paths while preserving responsive user-facing behavior.",
+    },
+    {
+      title: "Cost-Aware Engineering",
       category: "Engineering",
       description:
-        "Working with TypeScript, linting, component boundaries, and deployment workflows to keep projects reliable.",
+        "Designing around latency, repeated context, caching, local execution, and measurable operating cost.",
     },
     {
-      title: "Technical Storytelling",
-      category: "Portfolio",
+      title: "Tooling and Automation",
+      category: "Pipeline",
       description:
-        "Framing problem, approach, tradeoffs, and outcomes so engineering work is easy to evaluate during hiring.",
+        "Building small external tools that turn manual creative or engineering steps into repeatable workflows.",
+    },
+    {
+      title: "Technical Communication",
+      category: "Product",
+      description:
+        "Explaining system goals, tradeoffs, results, and limitations in a way that makes engineering work easy to evaluate.",
     },
   ],
   zh: [
     {
-      title: "智能体产品原型",
-      category: "AI",
-      description: "规划工作流形态、工具边界、评估节点和面向用户的交互方式。",
-    },
-    {
-      title: "全栈 Web 基础",
-      category: "软件",
-      description: "构建类型安全的 Next.js 应用，保持清晰 UI 结构、路由和数据模块。",
-    },
-    {
-      title: "界面打磨",
-      category: "前端",
-      description: "设计响应式、精致的深色界面，兼顾动效、玻璃质感和明确交互状态。",
-    },
-    {
-      title: "系统思维",
+      title: "系统拆解",
       category: "架构",
-      description: "把模糊需求拆成小而可测的模块，并逐步演进为稳定的产品基础设施。",
+      description: "把开放性的产品想法拆成清晰层级、职责边界和可验证的执行路径。",
     },
     {
-      title: "开发者工具链",
+      title: "结构化 AI 输出",
+      category: "AI",
+      description: "把模型响应转成有约束、可校验、能被下游软件安全消费的 artifacts。",
+    },
+    {
+      title: "运行时边界设计",
+      category: "系统",
+      description: "把不可预测的生成过程放在关键运行路径之外，同时保持用户可见流程的响应性。",
+    },
+    {
+      title: "成本意识工程",
       category: "工程",
-      description: "使用 TypeScript、Lint、组件边界和部署流程保持项目可靠可维护。",
+      description: "围绕延迟、重复上下文、缓存、本地执行和可度量运行成本来设计系统。",
+    },
+    {
+      title: "工具链与自动化",
+      category: "管线",
+      description: "把手工创作或工程步骤封装成小型外部工具，形成可重复的工作流。",
     },
     {
       title: "技术表达",
-      category: "作品集",
-      description: "清晰呈现问题、方案、取舍和结果，让工程价值更容易被招聘方评估。",
+      category: "产品",
+      description: "清楚说明系统目标、技术取舍、结果和边界，让工程工作更容易被评估。",
     },
   ],
 };
