@@ -132,8 +132,8 @@ export const projects: Project[] = [
           en: "Terminal screenshot showing Haiku generating scene skeleton cache.",
           zh: "终端截图，展示 Haiku 生成场景骨架缓存。",
         },
-        width: 1105,
-        height: 202,
+        width: 847,
+        height: 153,
       },
       {
         title: {
