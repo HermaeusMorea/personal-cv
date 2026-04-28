@@ -1,0 +1,32 @@
+# dependencies
+node_modules
+
+# local reference repositories
+.local-modules/
+
+# next.js
+.next
+out
+
+# production
+build
+dist
+
+# misc
+.DS_Store
+*.pem
+.codex
+tsconfig.tsbuildinfo
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# env files
+.env
+.env*.local
+
+# vercel
+.vercel
